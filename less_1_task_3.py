@@ -16,14 +16,11 @@ print(f"Вторая координата ({x2}, {y2}).")
 if (x1 == x2) & (y1 == y2):
     print("Вы ввели одну и ту же координату. Построение уравнения невозможно")
 else:
-    A = (y2 - y1)
+    A = (y1 - y2)
     B = (x2 - x1)
     C = (x1 * y2 - x2 * y1)
     if B == 0:
-        if A == 0:
-            print(f"y = {-C}")
-        else:
-            print(f"y = {-A}x + {-C}")
+        print(f"x = {-C/A}")
     else:
         if A == 0:
             print(f"y = {-C / B}")
